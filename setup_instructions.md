@@ -1,13 +1,53 @@
-## Setup and Installation
+# Setup and Installation
 
-### Prerequisites
+## Prerequisites
 - Python 3.8 or higher
+- Git (for cloning the repository)
 
-### Steps
+## Setup Options
 
+### Option 1: Clone from GitHub
+1. Clone the repository
+   ```
+   git clone https://github.com/yourusername/caller-id-api.git
+   cd caller-id-api
+   ```
+
+2. Create a virtual environment
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Set up environment variables
+   ```
+   # Create a .env file in the project root with the following content:
+   DEBUG=True
+   SECRET_KEY=django-insecure-2%g9_s-#p&j6hv51_$*phyb2@#8d8!6ae$q8z9$+gla4^o7jmy
+   ALLOWED_HOSTS=localhost,127.0.0.1
+   ```
+
+5. Run migrations
+   ```
+   python manage.py migrate
+   ```
+
+6. Start the development server
+   ```
+   python manage.py runserver
+   ```
+
+The API will be available at http://127.0.0.1:8000/
+
+### Option 2: Using the provided files
 1. Extract the project files to your desired location
    ```
-   Open terminal in this folder caller_identification_anishfyi
+   Open terminal in this folder caller-id-api
    ```
 
 2. Create a virtual environment
