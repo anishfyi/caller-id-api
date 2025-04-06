@@ -1,0 +1,10 @@
+Django==4.2.11
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.1
+pytest==8.0.2
+pytest-django==4.8.0
+python-dotenv==1.0.1
+# drf-yasg==1.21.7  # Removed to save space
+django-phonenumber-field==7.3.0
+phonenumbers==8.13.32
+Faker==20.1.0 
